@@ -1,0 +1,77 @@
+.retention-page {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .activity-section {
+    margin-bottom: 20px;
+  }
+  
+  .activity-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .activity-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .incentive-message {
+    background-color: #f0f8ff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .incentive-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  .incentive-message button {
+    background-color: #28a745;
+  }
+  
+  .incentive-message button:hover {
+    background-color: #218838;
+  }
+  

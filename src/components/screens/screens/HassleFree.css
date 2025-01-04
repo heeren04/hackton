@@ -1,0 +1,142 @@
+.hassle-free {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  justify-content: flex-start; /* Align items at the top */
+  align-items: center;
+  height: 100vh;
+  background-image: url('/public/hassel.jpg'); /* Image directly from the public folder */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Arial', sans-serif;
+  padding: 0 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+}
+
+.hassle-free h1 {
+  margin-top: 50px; /* Space from the top */
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1; /* Ensure it appears above the background */
+}
+
+.plan-selector {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px; /* Maximum width for better layout */
+  margin-top: 30px; /* Space between heading and plan cards */
+}
+
+.plan-card {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, background 0.3s ease;
+  color: white;
+  text-align: left;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.1); /* Light hover effect */
+}
+
+.plan-card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.plan-card p {
+  font-size: 1.2rem;
+}
+
+.plan-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.plan-card li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.billing-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.billing-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  color: #333;
+  position: relative;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #333;
+}
+
+.month-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.adjust-button {
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.adjust-button:hover {
+  background: #ccc;
+}
+
+.proceed-button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.proceed-button:hover {
+  background: #0056b3;
+}
+
+.proceed-button:active {
+  background: #003d82;
+}
